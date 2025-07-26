@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Prediction App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #2d3436;
+        }
+
+        input, button {
+            width: 90%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation System</h1>
+        <form method="post" action="/predict">
+            <input type="number" name="N" placeholder="Nitrogen (N)" required>
+            <input type="number" name="P" placeholder="Phosphorus (P)" required>
+            <input type="number" name="K" placeholder="Potassium (K)" required>
+            <input type="number" name="temperature" placeholder="Temperature (°C)" step="0.1" required>
+            <input type="number" name="humidity" placeholder="Humidity (%)" step="0.1" required>
+            <input type="number" name="ph" placeholder="pH" step="0.1" required>
+            <input type="number" name="rainfall" placeholder="Rainfall (mm)" step="0.1" required>
+            <button type="submit">Predict Crop</button>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">{{ prediction_text }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
