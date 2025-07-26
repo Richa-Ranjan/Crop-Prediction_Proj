@@ -1,38 +1,8 @@
-🌾 Crop Prediction Project
+🌾🌾 Crop Prediction System using Machine Learning
 
-This is a Machine Learning-based Crop Recommendation System that predicts the most suitable crop based on soil and environmental parameters.
+This project is a machine learning-based **Crop Prediction System** that recommends the most suitable crop for cultivation based on environmental and soil conditions. It aims to assist *farmers, agri-scientists, and agri-tech companies* in making **data-driven agricultural decisions** to maximize crop yield and sustainability.
 
-## 🎯 Accuracy
-Achieved **94.5% accuracy** using RandomForestClassifier.
-
-## 🚀 Features
-- Built using Python, Jupyter Notebook
-- Frontend using HTML & Flask
-- Input parameters: N, P, K, Temperature, Humidity, pH, Rainfall
-
-## 📁 Files
-- `crop_prediction_project.ipynb` – Model Training
-- `app.ipynb` – Flask Integration
-- `crop_prediction.html` – Web UI
-
-## 🔧 Tech Stack
-- Python (Sklearn, Pandas, Numpy)
-- Jupyter Notebook
-- Flask
-- HTML/CSS
-
-## 📌 Run Locally
-```bash
-flask run
-🧠 Output Example
-Predicted crop: rice, maize, etc. based on inputs.
-
-----------------------------------------------------
-Project purpose & utility🌾
-
-This project is a machine learning-based **Crop Prediction System** that recommends the most suitable crop for cultivation based on environmental and soil conditions. It aims to assist **farmers, agri-scientists, and agri-tech companies** in making **data-driven agricultural decisions** to maximize crop yield and sustainability.
-
---->>>>
+---
 
 ## 🧩 Utility of This Project
 
@@ -92,12 +62,9 @@ Crop Project Using ML/
 ├── crop_prediction_project.ipynb # ML model training
 ├── app.ipynb # Web integration (Flask)
 ├── crop_prediction.html # Frontend form
-├── static/ CSS files
+├── static/ # (Optional) CSS, JS files
 ├── templates/ # HTML templates for Flask
 
-yaml
-Copy
-Edit
 
 ---
 
